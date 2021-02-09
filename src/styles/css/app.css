@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
-header {
+.desktop__header,
+.mobile__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,18 +14,21 @@ header {
   margin-top: 30px;
 }
 
-header .hamburger__icon {
+.desktop__header .hamburger__icon,
+.mobile__header .hamburger__icon {
   display: none;
 }
 
 @media screen and (max-width: 900px) {
-  header .hamburger__icon {
+  .desktop__header .hamburger__icon,
+  .mobile__header .hamburger__icon {
     display: inline-block;
     cursor: pointer;
   }
 }
 
-header nav .nav__list {
+.desktop__header nav .nav__list,
+.mobile__header nav .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,12 +38,14 @@ header nav .nav__list {
 }
 
 @media screen and (max-width: 900px) {
-  header nav .nav__list {
+  .desktop__header nav .nav__list,
+  .mobile__header nav .nav__list {
     display: none;
   }
 }
 
-header nav .nav__list .nav__item {
+.desktop__header nav .nav__list .nav__item,
+.mobile__header nav .nav__list .nav__item {
   color: #252b46;
   padding: 0 20px;
   list-style: none;
@@ -50,11 +56,13 @@ header nav .nav__list .nav__item {
   transition: all 0.2s ease-in-out;
 }
 
-header nav .nav__list .nav__item:hover {
+.desktop__header nav .nav__list .nav__item:hover,
+.mobile__header nav .nav__list .nav__item:hover {
   color: #fa5757;
 }
 
-header nav .nav__list .login__button {
+.desktop__header nav .nav__list .login__button,
+.mobile__header nav .nav__list .login__button {
   background-color: #fa5757;
   color: white;
   display: -webkit-box;
@@ -74,9 +82,104 @@ header nav .nav__list .login__button {
   border: 2px solid #fa5757;
 }
 
-header nav .nav__list .login__button:hover {
+.desktop__header nav .nav__list .login__button:hover,
+.mobile__header nav .nav__list .login__button:hover {
   color: #fa5757;
   background-color: #fff;
+}
+
+.mobile__header {
+  width: 85%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.mobile__header .header__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile__header nav {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.mobile__header nav .nav__list .nav__item {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 3.8;
+  border-bottom: 1px solid #5f688d80;
+}
+
+.mobile__header nav .nav__list .features {
+  border-top: 1px solid #5f688d80;
+}
+
+.mobile__header nav .nav__list .login__button {
+  width: 100%;
+  margin: 30px 0;
+  padding: 10px;
+  line-height: 2;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.mobile__header nav .nav__list .login__button:hover {
+  border: 2px solid #252b46;
+  background-color: #fff;
+  color: #252b46;
+}
+
+.mobile__header .social__media {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile__header .social__media {
+    gap: 30px;
+  }
+}
+
+.mobile__header .social__media svg {
+  cursor: pointer;
+}
+
+.mobile__header .social__media svg path {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile__header .social__media svg:hover path {
+  fill: #fa5757;
 }
 
 .bookmark__manager__hero {
@@ -138,13 +241,23 @@ header nav .nav__list .login__button:hover {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 900px) {
+  .bookmark__manager__hero .text__content .call__to__action {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .bookmark__manager__hero .text__content .call__to__action .button {
   padding: 15px 20px;
 }
 
 @media screen and (max-width: 900px) {
   .bookmark__manager__hero .text__content .call__to__action .button {
-    margin: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -167,10 +280,10 @@ header nav .nav__list .login__button:hover {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .bookmark__manager__hero .text__content .call__to__action .chrome__button {
-    margin-right: auto;
     margin-bottom: 1px;
+    margin-right: 0;
   }
 }
 
@@ -189,16 +302,30 @@ header nav .nav__list .login__button:hover {
   font-weight: 500;
 }
 
+@media screen and (max-width: 960px) {
+  .bookmark__manager__hero .text__content .call__to__action .firefox__button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .bookmark__manager__hero .text__content .call__to__action .firefox__button {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .bookmark__manager__hero .text__content .call__to__action .firefox__button {
     margin-left: 5px;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .bookmark__manager__hero .text__content .call__to__action .firefox__button {
-    margin-left: auto;
     margin-top: 10px;
+    margin-left: 0px;
   }
 }
 
@@ -1042,10 +1169,14 @@ footer .attribution a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(37, 43, 70, 0.9);
+  background-color: rgba(37, 43, 70, 0.95);
 }
 
 .index__lower {
   z-index: -1 !important;
+}
+
+.active {
+  display: block !important;
 }
 /*# sourceMappingURL=app.css.map */

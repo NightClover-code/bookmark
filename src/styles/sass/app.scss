@@ -107,8 +107,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(37, 43, 70, 0.9);
+  background-color: rgba(37, 43, 70, 0.95);
 }
 .index__lower {
   z-index: -1 !important;
+}
+.active {
+  display: block !important;
 }

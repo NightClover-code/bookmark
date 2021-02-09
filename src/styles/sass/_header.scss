@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  .hamburger__icon {
+    display: none;
+    @media screen and (max-width: 900px) {
+      display: inline-block;
+    }
+  }
+  nav {
+    .nav__list {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+      .nav__item {
+        color: $very-dark-blue;
+        padding: 0 20px;
+        list-style: none;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: $soft-red;
+        }
+      }
+      .login__button {
+        background-color: $soft-red;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+        margin-left: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        border: 2px solid $soft-red;
+        &:hover {
+          color: $soft-red;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

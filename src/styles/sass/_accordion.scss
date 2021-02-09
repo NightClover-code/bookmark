@@ -1,0 +1,78 @@
+.faq__section {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  .faq__head {
+    text-align: center;
+    h1 {
+      font-size: 32px;
+      @media screen and (max-width: 900px) {
+        font-size: 25px;
+      }
+    }
+    p {
+      width: 45%;
+      @media screen and (max-width: 900px) {
+        width: 90%;
+      }
+      margin: auto;
+    }
+  }
+  .faq__accordion {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    .accordion__item {
+      margin: auto;
+      width: 500px;
+      border-bottom: 1px solid rgb(216, 216, 216);
+      padding: 20px 0;
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+      .accordion__checked {
+        display: none;
+        &:checked ~ .answer {
+          display: block !important;
+        }
+        &:checked ~ .question {
+          i {
+            color: $soft-red;
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .question {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $very-dark-blue;
+        font-size: 18px;
+        transition: all 0.2s ease-in-out;
+        i {
+          color: $soft-blue;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+          color: $soft-red;
+        }
+      }
+      .answer {
+        color: $grayish-blue;
+        font-size: 17px;
+        line-height: 2;
+        padding: 20px 0;
+        font-weight: 400;
+        display: none;
+      }
+    }
+  }
+  .chrome__button {
+    padding: 15px 20px;
+    margin-top: 50px;
+  }
+}

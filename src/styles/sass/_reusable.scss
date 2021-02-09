@@ -1,0 +1,35 @@
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: $very-dark-blue;
+  line-height: 1;
+}
+p {
+  color: $grayish-blue;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 20px 0;
+  font-weight: 400;
+  @media screen and (max-width: 700px) {
+    font-size: 15px;
+    margin: auto;
+    width: 80%;
+  }
+}
+.chrome__button {
+  color: #fff;
+  margin-right: 10px;
+  background-color: $soft-blue;
+  border: 2px solid $soft-blue;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #fff;
+    color: $soft-blue;
+  }
+}
+.button {
+  //   display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}

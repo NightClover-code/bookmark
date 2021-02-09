@@ -1,0 +1,61 @@
+.newsletter__section {
+  margin-top: 100px;
+  background-color: $soft-blue;
+  color: #fff;
+  text-align: center;
+  padding: 70px 0;
+  h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+  h1 {
+    color: #fff;
+    margin: 30px auto;
+    width: 40%;
+    line-height: 1.4;
+    @media screen and (max-width: 800px) {
+      width: auto;
+      font-size: 25px;
+    }
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    @media screen and (max-width: 550px) {
+      width: auto;
+      gap: 10px;
+    }
+    .email__input {
+      outline: none;
+      border: none;
+      font-family: inherit;
+      padding: 15px;
+      width: 300px;
+      border-radius: 5px;
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+    }
+    button {
+      outline: none;
+      padding: 13px 20px;
+      font-family: inherit;
+      color: #fff;
+      background-color: $soft-red;
+      transition: all 0.2s ease-in-out;
+      border: 2px solid $soft-red;
+      &:hover {
+        color: $soft-red;
+        background-color: #fff;
+      }
+      @media screen and (max-width: 550px) {
+        width: 100%;
+      }
+    }
+  }
+}

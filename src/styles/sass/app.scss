@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import './variables';
+@import './header';
+@import './hero';
+@import './features';
+@import './reusable';
+@import './extensions';
+@import './accordion';
+@import './footer';
+@import './newsletter';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  .blue__bg__right {
+    width: 65%;
+    max-height: 400px;
+    height: 100%;
+    background-color: $soft-blue;
+    position: absolute;
+    right: -25%;
+    top: 250px;
+    z-index: -1;
+    border-radius: 500px;
+    @media screen and (max-width: 1400px) {
+      width: 65%;
+      max-height: 300px;
+    }
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      max-height: 250px;
+      top: 300px;
+    }
+    @media screen and (max-width: 700px) {
+      max-height: 250px;
+      top: 250px;
+    }
+    @media screen and (max-width: 600px) {
+      max-height: 180px;
+      top: 200px;
+    }
+    @media screen and (max-width: 400px) {
+      max-height: 150px;
+      width: 250px;
+      top: 170px;
+    }
+  }
+  .blue__bg__left {
+    width: 65%;
+    max-height: 350px;
+    height: 100%;
+    background-color: $soft-blue;
+    position: absolute;
+    left: -25%;
+    top: 1100px;
+    z-index: -1;
+    border-radius: 500px;
+    @media screen and (max-width: 1400px) {
+      max-height: 250px;
+    }
+    @media screen and (max-width: 950px) {
+      top: 1200px;
+    }
+    @media screen and (max-width: 900px) {
+      top: 1450px;
+      width: 100%;
+    }
+    @media screen and (max-width: 700px) {
+      top: 1200px;
+      width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      max-height: 150px;
+      top: 1250px;
+    }
+    @media screen and (max-width: 350px) {
+      max-height: 150px;
+      width: 250px;
+      top: 1300px;
+    }
+  }
+  .wrapper {
+    min-width: 240px;
+    max-width: 2000px;
+    width: 75%;
+    margin: auto;
+    @media screen and (max-width: 1100px) {
+      width: 80%;
+    }
+  }
+}

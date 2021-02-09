@@ -1,6 +1,11 @@
-const Hero: React.FC = () => {
+interface HeroProps {
+  isNavOpen: boolean;
+}
+const Hero: React.FC<HeroProps> = ({ isNavOpen }) => {
   return (
-    <section className="bookmark__manager__hero">
+    <section
+      className={`bookmark__manager__hero ${isNavOpen ? 'index__lower' : ''}`}
+    >
       <div className="text__content">
         <h1>A Simple Bookmark Manager</h1>
         <p>

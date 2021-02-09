@@ -78,6 +78,7 @@
     }
   }
   .illustration__container {
+    z-index: -1;
     min-width: 400px;
     img {
       width: 100%;

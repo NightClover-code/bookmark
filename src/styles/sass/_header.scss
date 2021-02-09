@@ -8,6 +8,7 @@ header {
     display: none;
     @media screen and (max-width: 900px) {
       display: inline-block;
+      cursor: pointer;
     }
   }
   nav {

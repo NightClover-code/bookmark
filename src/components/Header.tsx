@@ -1,8 +1,20 @@
-const Header: React.FC = () => {
+interface HeaderProps {
+  isNavOpen: boolean;
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Header: React.FC<HeaderProps> = ({ isNavOpen, setIsNavOpen }) => {
+  //icon source class
+  const IconClass = isNavOpen
+    ? './images/icon-close.svg'
+    : './images/icon-hamburger.svg';
+  //logo source class
+  const logoClass = isNavOpen
+    ? './images/bookmark-light.svg'
+    : './images/logo-bookmark.svg';
   return (
     <header>
       <div className="logo__container">
-        <img src="./images/logo-bookmark.svg" alt="bookmark-logo" />
+        <img src={logoClass} alt="bookmark-logo" />
       </div>
       <nav>
         <ul className="nav__list">
@@ -12,8 +24,8 @@ const Header: React.FC = () => {
           <li className="nav__item login__button">Login</li>
         </ul>
       </nav>
-      <div className="hamburger__icon">
-        <img src="./images/icon-hamburger.svg" alt="hamburger-icon" />
+      <div className="hamburger__icon" onClick={() => setIsNavOpen(!isNavOpen)}>
+        <img src={IconClass} alt="icon-close / icon-hamburger" />
       </div>
     </header>
   );

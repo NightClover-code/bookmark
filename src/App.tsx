@@ -1,4 +1,7 @@
-import { useState } from 'react';
+//importing hooks & aos
+import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 //importing styles
 import './styles/css/app.css';
 //importing components
@@ -11,6 +14,13 @@ import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 //app component
 const App: React.FC = () => {
+  //initializing aos
+  useEffect(() => {
+    AOS.init({
+      duration: 750,
+    });
+  }, []);
+  //checking if window was resized
   window.addEventListener('resize', () => {
     if (window.innerWidth > 800) {
       setIsNavOpen(false);

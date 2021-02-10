@@ -34,7 +34,7 @@ const Features: React.FC = () => {
   }, [counter]);
   return (
     <section className="features__section">
-      <div className="features__head">
+      <div className="features__head" data-aos="fade-up">
         <h1>Features</h1>
         <p>
           Our aim is to make it quick and easy for you to access your favourite
@@ -42,7 +42,7 @@ const Features: React.FC = () => {
           them on the go.
         </p>
       </div>
-      <div className="features__tabs">
+      <div className="features__tabs" data-aos="fade-up">
         <ul className="tabs__list" onClick={onClickHandler} ref={listRef}>
           <li className="active" data-id="0">
             Simple Bookmarking
@@ -52,14 +52,22 @@ const Features: React.FC = () => {
         </ul>
       </div>
       <div className="features__content">
-        <div className="illustration__container">
+        <div
+          className="illustration__container"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
           <img
             src={currentData.imgSource}
             alt="features-illustration"
             id="features__tabs__image"
           />
         </div>
-        <div className="text__content">
+        <div
+          className="text__content"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
           <h1 id="features__heading">{currentData.title}</h1>
           <p id="features__paragraph">{currentData.description}</p>
           <div className="chrome__button button">More Info</div>

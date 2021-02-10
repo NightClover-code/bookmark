@@ -1,7 +1,7 @@
 const Extensions: React.FC = () => {
   return (
     <section className="extensions__section">
-      <div className="extensions__head">
+      <div className="extensions__head" data-aos="fade-up">
         <h1>Download the extension</h1>
         <p>
           We’ve got more browsers in the pipeline. Please do let us know if
@@ -9,7 +9,11 @@ const Extensions: React.FC = () => {
         </p>
       </div>
       <div className="extensions__grid">
-        <div className="extension__card chrome__card">
+        <div
+          className="extension__card chrome__card"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div className="browser__logo">
             <img src="./images/logo-chrome.svg" alt="logo-chrome" />
           </div>
@@ -20,7 +24,11 @@ const Extensions: React.FC = () => {
           </div>
           <div className="chrome__button button">Add & Install Extension</div>
         </div>
-        <div className="extension__card firefox__card">
+        <div
+          className="extension__card firefox__card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <div className="browser__logo">
             <img src="./images/logo-firefox.svg" alt="logo-firefox" />
           </div>
@@ -31,7 +39,11 @@ const Extensions: React.FC = () => {
           </div>
           <div className="chrome__button button">Add & Install Extension</div>
         </div>
-        <div className="extension__card opera__card">
+        <div
+          className="extension__card opera__card"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div className="browser__logo">
             <img src="./images/logo-opera.svg" alt="logo-opera" />
           </div>

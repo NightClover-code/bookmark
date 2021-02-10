@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.3",
+    "aos": "^2.3.4",
+    "gsap": "^3.6.0"
   }
 }

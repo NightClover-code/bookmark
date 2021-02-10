@@ -17,11 +17,14 @@ const Newsletter: React.FC = () => {
   return (
     <section className="newsletter__section">
       <div className="wrapper">
-        <h3>35,000+ already joined</h3>
-        <h1 className={isValid !== null ? 'resize__heading' : ''}>
+        <h3 data-aos="fade-up">35,000+ already joined</h3>
+        <h1
+          className={isValid !== null ? 'resize__heading' : ''}
+          data-aos="fade-up"
+        >
           Stay up-to-date with what we're doing
         </h1>
-        <form onSubmit={onSubmitHandler} noValidate>
+        <form onSubmit={onSubmitHandler} data-aos="fade-up" noValidate>
           <div
             className={`input__container ${
               isValid !== null ? (isValid ? 'valid' : 'error') : ''

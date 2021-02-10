@@ -1,14 +1,14 @@
 const Accordion: React.FC = () => {
   return (
     <section className="faq__section">
-      <div className="faq__head">
+      <div className="faq__head" data-aos="fade-up" data-aos-delay="200">
         <h1>Frequently Asked Questions</h1>
         <p>
           Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.
         </p>
       </div>
-      <div className="faq__accordion">
+      <div className="faq__accordion" data-aos="fade-up" data-aos-delay="300">
         <div className="accordion__item">
           <input
             type="checkbox"

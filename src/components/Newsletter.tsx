@@ -1,5 +1,6 @@
+//importing hooks
 import { useState } from 'react';
-
+//newletter component
 const Newsletter: React.FC = () => {
   //local state
   const [email, setEmail] = useState<string>('');

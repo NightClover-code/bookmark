@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       </div>
       <p className="attribution">
         &copy; Copyright 2021, coded with 💖 by
-        <a href="github.com/NightClover-code">NightClover-code</a>.
+        <a href="github.com/NightClover-code"> NightClover-code</a>.
       </p>
     </footer>
   );

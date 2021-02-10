@@ -1,6 +1,7 @@
 interface HeroProps {
   isNavOpen: boolean;
 }
+//hero component
 const Hero: React.FC<HeroProps> = ({ isNavOpen }) => {
   return (
     <section

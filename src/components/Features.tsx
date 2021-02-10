@@ -1,3 +1,4 @@
+//importing hooks
 import { useEffect, useState, useRef } from 'react';
 //importing data
 import data from '../utils';

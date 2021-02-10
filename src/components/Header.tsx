@@ -2,6 +2,7 @@ interface HeaderProps {
   isNavOpen: boolean;
   setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+//header component
 const Header: React.FC<HeaderProps> = ({ isNavOpen, setIsNavOpen }) => {
   //icon source class
   const IconClass = isNavOpen

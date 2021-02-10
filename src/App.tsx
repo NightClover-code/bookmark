@@ -1,3 +1,4 @@
+import { useState } from 'react';
 //importing styles
 import './styles/css/app.css';
 //importing components
@@ -8,7 +9,6 @@ import Extensions from './components/Extensions';
 import Accordion from './components/Accordion';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import { useEffect, useState } from 'react';
 //app component
 const App: React.FC = () => {
   window.addEventListener('resize', () => {

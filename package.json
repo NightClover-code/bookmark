@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.3",
-    "aos": "^2.3.4",
-    "gsap": "^3.6.0"
+    "aos": "^2.3.4"
   }
 }

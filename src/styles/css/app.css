@@ -998,19 +998,29 @@ footer .attribution a {
   }
 }
 
-.newsletter__section form .email__input {
-  outline: none;
-  border: none;
-  font-family: inherit;
-  padding: 15px;
+.newsletter__section form .input__container {
   width: 300px;
   border-radius: 5px;
 }
 
 @media screen and (max-width: 550px) {
-  .newsletter__section form .email__input {
+  .newsletter__section form .input__container {
     width: 100%;
   }
+}
+
+.newsletter__section form .input__container .email__input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.newsletter__section form .input__container span {
+  font-size: 12px;
+  font-style: italic;
 }
 
 .newsletter__section form button {
@@ -1033,6 +1043,22 @@ footer .attribution a {
   .newsletter__section form button {
     width: 100%;
   }
+}
+
+.error {
+  background-color: #f93939;
+  padding: 3px;
+  margin-top: 20px;
+}
+
+.valid {
+  margin-top: 20px;
+  background-color: #36ab6a;
+  padding: 3px;
+}
+
+.resize__heading {
+  margin: 30px auto 10px auto !important;
 }
 
 * {

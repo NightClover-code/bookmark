@@ -104,6 +104,12 @@
           flex-flow: column nowrap;
 }
 
+@media screen and (min-width: 900px) {
+  .mobile__header {
+    display: none;
+  }
+}
+
 .mobile__header .header__head {
   display: -webkit-box;
   display: -ms-flexbox;

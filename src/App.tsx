@@ -8,9 +8,14 @@ import Extensions from './components/Extensions';
 import Accordion from './components/Accordion';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 //app component
 const App: React.FC = () => {
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 800) {
+      setIsNavOpen(false);
+    }
+  });
   //global state
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   return (

@@ -51,6 +51,9 @@
   }
 }
 .mobile__header {
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
   width: 85%;
   position: absolute;
   top: 0;
